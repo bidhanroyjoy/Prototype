@@ -1,0 +1,73 @@
+import React from 'react'
+
+import Blob from '../../assets/Blob.png'
+import Separator from '../../assets/separator.svg'
+import logo from '../../assets/Logo.png'
+import { Link } from "react-scroll";
+// import "./Header.css";
+
+const Header = ({setActive}) => {
+    // document.querySelector('.close-menu').addEventListener('click', (event)=>{
+    //     document.querySelector('.navigation-items').classList.toggle('open-menu')
+    // })
+  return (
+    <div>
+     <header> 
+         {/* <div className='header'> */}
+        <section className="navigation">
+            <ul className="navigation-left" style={{cursor:'pointer'}}>
+                <li className="navigation-item"><Link to="home">Home</Link></li>
+                <li className="navigation-item"><Link to="about">About Us</Link></li>
+                <li className="navigation-item"><Link to="services">Services</Link></li>
+            </ul>
+            <div className="logo">
+                <img src={logo} alt="" />
+            </div>
+            <ul className="navigation-right" style={{cursor:'pointer'}}>
+                <li className="navigation-item"><Link to="portfolio">Portfolio</Link></li>
+                <li className="navigation-item"><Link to="contact us">Contact Us</Link></li>
+                <li className="navigation-item"><Link to="support">Support</Link></li>
+                <li className="navigation-item" ><Link to="registration">Login</Link></li>
+            </ul>
+        </section>
+        
+        {/* <section className="navigation-sm">
+            <div className="logo">
+                <img src={logo} alt="" />
+            </div>
+            <button className="close-menu">X</button>
+
+            <ul className="navigation-items">
+                <li className="navigation-item"><Link to="/">Home</Link></li>
+                <li className="navigation-item"><Link to="/about">About Us</Link></li>
+                <li className="navigation-item"><Link to="/services">Services</Link></li>
+                <li className="navigation-item"><Link to="/portfolio">Portfolio</Link></li>
+                <li className="navigation-item"><Link to="/contact us">Contact Us</Link></li>
+                <li className="navigation-item"><Link to="/support">Support</Link></li>
+                <li className="navigation-item"><Link to="/registration">Login</Link></li>
+            </ul>
+        </section> */}
+        <section className="hero">
+            <div className="carousel">
+                <div className="slide slide-1">
+                    <div className="slide-left">
+                        <h2 className="slide-title">A Venture with Passion</h2>
+                        <p className="slide-text">Continually whiteboard viral ROI with functional e-services. Enthusiastically fabricate equity invested communities rather than cross-media markets.</p>
+                        <button className="slide-cta">Get quote</button>
+                    </div>
+                    <div className="slide-right">
+                        <img src={Blob} alt=""/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section className="curve">
+        <img src={Separator} alt="" />
+        </section>
+        </header>
+    {/* </div> */}
+    </div>
+  )
+}
+
+export default Header
