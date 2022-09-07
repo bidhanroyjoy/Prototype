@@ -5,5 +5,5 @@ import Registration from './Registration'
 export {
     Homepage,
     Login,
-    Registration
+    Registration,
 }

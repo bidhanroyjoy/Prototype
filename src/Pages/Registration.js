@@ -12,7 +12,8 @@ const Registration = () => {
   return (
     <div className="container">
       <div className="header">
-        <img className="logo" src={logos} alt="" />
+      <Link to='/'><img className="logo" src={logos} alt="" /></Link>
+        {/* <img className="logo" src={logos} alt="" /> */}
       </div>
       <div className="registration">
         <div className="registration-media">

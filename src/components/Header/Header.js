@@ -1,12 +1,12 @@
-import React,{useState} from 'react'
-
+import React, { useState } from "react";
+import { FaBars } from "react-icons/fa";
 import Blob from "../../assets/Blob.png";
 import Separator from "../../assets/separator.svg";
 import Logo from "../../assets/logoo.png";
 import { Link } from "react-router-dom";
 
 const Header = ({ setActive }) => {
-    const[show,setShow]=useState(true);
+  const [show, setShow] = useState(true);
   return (
     <div>
       <header>
@@ -26,7 +26,6 @@ const Header = ({ setActive }) => {
             <Link to="/">
               <img src={Logo} alt="" />
             </Link>
-            {/* <img src={Logo} alt="" /> */}
           </div>
           <ul className="navigation-right" style={{ cursor: "pointer" }}>
             <li className="navigation-item">
@@ -43,42 +42,49 @@ const Header = ({ setActive }) => {
             </li>
           </ul>
         </section>
+        <button
+          className="close-menu"
+          onClick={() => setShow(!show)}
+          style={{ color: "black", cursor:'pointer' }}
+        >
+          {" "}
+          <FaBars />
+        </button>
+        {show ? (
+          <section className="navigation-sm">
+            <div className="logo" style={{ cursor: "pointer" }}>
+              <Link to="/">
+                <img src={Logo} alt="" />
+              </Link>
+            </div>
 
-        <section className="navigation-sm">
-          <div className="logo" style={{ cursor: "pointer" }}>
-            <Link to="/">
-              <img src={Logo} alt="" />
-            </Link>
-            {/* <img src={Logo} alt="" /> */}
-          </div>
-          <button className="close-menu">X</button>
-
-          <ul className="navigation-items">
-            <li className="navigation-item">
-              <Link to="/">Home</Link>
-            </li>
-            <li className="navigation-item">
-              <Link to="/about">About Us</Link>
-            </li>
-            <li className="navigation-item">
-              <Link to="/services">Services</Link>
-            </li>
-            <li className="navigation-item">
-              <Link to="/portfolio">Portfolio</Link>
-            </li>
-            <li className="navigation-item">
-              <Link to="/contact us">Contact Us</Link>
-            </li>
-            <li className="navigation-item">
-              <Link to="/support">Support</Link>
-            </li>
-            <li className="navigation-item">
-              <Link to="/registration">Login</Link>
-            </li>
-          </ul>
-        </section>
+            <ul className="navigation-items">
+              <li className="navigation-item">
+                <Link to="/">Home</Link>
+              </li>
+              <li className="navigation-item">
+                <Link to="/about">About Us</Link>
+              </li>
+              <li className="navigation-item">
+                <Link to="/services">Services</Link>
+              </li>
+              <li className="navigation-item">
+                <Link to="/gallery">Portfolio</Link>
+              </li>
+              <li className="navigation-item">
+                <Link to="/gallery">Contact Us</Link>
+              </li>
+              <li className="navigation-item">
+                <Link to="/footer">Support</Link>
+              </li>
+              <li className="navigation-item">
+                <Link to="/registration">Login</Link>
+              </li>
+            </ul>
+          </section>
+        ) : null}
         <section className="hero">
-          {/* <div className="carousel"> */}
+        
           <div className="slide slide-1">
             <div className="slide-left">
               <h2 className="slide-title">A Venture with Passion</h2>
@@ -93,7 +99,7 @@ const Header = ({ setActive }) => {
               <img src={Blob} alt="" />
             </div>
           </div>
-          {/* </div> */}
+     
         </section>
         <section className="curve">
           <img src={Separator} alt="" />

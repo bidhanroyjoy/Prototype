@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+// import Navbar from '../components/Navbar'
 import Registration from './Registration'
 
 const Login = () => {
   return (
     <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <Registration />
     </div>
   )
