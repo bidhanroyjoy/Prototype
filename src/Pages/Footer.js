@@ -4,6 +4,7 @@ import Email from '../assets/Email-Icon.svg'
 import Facebook from '../assets/Facebook.svg'
 import Twitter from '../assets/Twitter.svg'
 import LinkedIn from '../assets/LinkedIn.svg'
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -31,11 +32,11 @@ const Footer = () => {
                     </div>
                     <div class="footer-nav">
                         <p>© 2022 Awesome Company Inc.</p>
-                        <ul class="footer-nav-items">
-                            <li class="footer-nav-item"><a href="#">Home</a></li>
-                            <li class="footer-nav-item"><a href="#">Privacy Policy</a></li>
-                            <li class="footer-nav-item"><a href="#">Disclaimer</a></li>
-                            <li class="footer-nav-item"><a href="#">Contact us</a></li>
+                        <ul class="footer-nav-items">  <Link to="#">Login</Link>
+                            <li class="footer-nav-item"><Link to="#">Home</Link></li>
+                            <li class="footer-nav-item"><Link to="#">Privacy Policy</Link></li>
+                            <li class="footer-nav-item"><Link to="#">Disclaimer</Link></li>
+                            <li class="footer-nav-item"><Link to="#">Contact us</Link></li>
                         </ul>
                         <ul class="footer-nav-social">
                             <li class="footer-nav-social-item">
