@@ -2,10 +2,12 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
 }
+
 header{
   background-image: url(./assets/backgound.png);
   background-size: cover;
 }
+
 header .navigation{
   display: flex;
   justify-content: center;
@@ -35,18 +37,26 @@ header .navigation{
   text-decoration: none;
   text-transform: uppercase;
 }
+.nav {
+  position:sticky;
+  z-index: 100;
+}
 
 .hero{
   /* border: 1px solid red; */
   max-width: 1000px;
   margin: 25px auto;
+  padding-top: 0%;
+  margin-top: 0.4px;
   /* padding-bottom: 30px; */
-  
 }
 .slide{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* margin-top: -24.5px; */
+  padding: 30px;
+  overflow: hidden;
 }
 
 .slide-left{

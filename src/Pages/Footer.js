@@ -6,7 +6,6 @@ import Twitter from '../assets/Twitter.svg'
 import LinkedIn from '../assets/LinkedIn.svg'
 import { Link } from "react-router-dom";
 
-
 const Footer = () => {
   return (
     <div>
