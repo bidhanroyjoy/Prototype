@@ -32,7 +32,7 @@ const Footer = () => {
                     </div>
                     <div class="footer-nav">
                         <p>© 2022 Awesome Company Inc.</p>
-                        <ul class="footer-nav-items">  <Link to="#">Login</Link>
+                        <ul class="footer-nav-items">  
                             <li class="footer-nav-item"><Link to="#">Home</Link></li>
                             <li class="footer-nav-item"><Link to="#">Privacy Policy</Link></li>
                             <li class="footer-nav-item"><Link to="#">Disclaimer</Link></li>
@@ -40,7 +40,7 @@ const Footer = () => {
                         </ul>
                         <ul class="footer-nav-social">
                             <li class="footer-nav-social-item">
-                                <img src={Facebook} alt="" />
+                                <img src={Facebook} alt="" /> 
                             </li>
                             <li class="footer-nav-social-item">
                                 <img src={Twitter} alt="" />

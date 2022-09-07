@@ -2,10 +2,11 @@ import React from "react";
 
 import Blob from "../../assets/Blob.png";
 import Separator from "../../assets/separator.svg";
-import logo from "../../assets/Logo.png";
+import Logo from "../../assets/logoo.png";
 import { Link } from "react-scroll";
 
 const Header = ({ setActive }) => {
+
   return (
     <div>
       <header>
@@ -22,7 +23,7 @@ const Header = ({ setActive }) => {
             </li>
           </ul>
           <div className="logo">
-            <img src={logo} alt="" />
+            <img src={Logo} alt="" />
           </div>
           <ul className="navigation-right" style={{ cursor: "pointer" }}>
             <li className="navigation-item">
@@ -42,7 +43,7 @@ const Header = ({ setActive }) => {
 
         <section className="navigation-sm">
           <div className="logo">
-            <img src={logo} alt="" />
+            <img src={Logo} alt="" />
           </div>
           <button className="close-menu">X</button>
 
